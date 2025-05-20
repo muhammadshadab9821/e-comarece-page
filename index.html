@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple E-commerce Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+  <header         >
+    <h1>Simple E-commerce Store</h1>
+    <div class="header-controls  ">
+      <input type="text" id="search" placeholder="Search products...">
+      <select id="filter-category">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+      </select>
+      <select id="filter-price">
+        <option value="all">All Prices</option>
+        <option value="0-20">Under $20</option>
+        <option value="20-50">$20 - $50</option>
+        <option value=">50">Over $50</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div id="products" class="product-grid" ></div>
+    <aside class="animate__animated animate__slideInRight">
+      <h2>🛒 Total</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="total">0.00</span></p>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
